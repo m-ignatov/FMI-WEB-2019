@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        EX5
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
+    <script src="utility.js"></script>
+</head>
+
+<body>
+    <form name="userInput"
+          id="userInputForm"
+          action="register.php"
+          method="post">
+        <div class="form-container">
+            <fieldset class="fieldset-container">
+                <legend>
+                    Input
+                </legend>
+                <div class="input-container">
+                    <label for="usernameInput">Username</label>
+                    <input type="text"
+                           name="username"
+                           id="usernameInput"
+                           minlength="3"
+                           maxlength="10"
+                           placeholder="Enter a username"
+                           required
+                           pattern="\w+"
+                           title="Username with length between 3 and 10. Allowed chars: letters, digits and _" />
+                </div>
+                <div class="input-container">
+                    <label for="passwordInput">Password</label>
+                    <input type="password"
+                           name="password"
+                           id="passwordInput"
+                           minlength="6"
+                           placeholder="Enter password"
+                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z\d]{6,}$"
+                           required
+                           title="Password with min length of 6. Required at least 1 char from all of the following: A-Z, a-z and 0-9" />
+                </div>
+                <div class="input-container">
+                    <label for="passwordInputRepeated">Confirm
+                        password</label>
+                    <input type="password"
+                           name="passwordRepeated"
+                           id="passwordInputRepeated"
+                           oninput="validate()"
+                           placeholder="Confirm password"
+                           required />
+                </div>
+            </fieldset>
+            <div>
+                <button id="submitButton">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
