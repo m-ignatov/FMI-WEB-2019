@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        EX5
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
+    <script defer
+            src="utility.js"></script>
+</head>
+
+<body>
+    <form name="userInput"
+          id="userInputForm">
+        <div class="form-container">
+            <fieldset class="fieldset-container">
+                <legend>
+                    Input
+                </legend>
+                <div class="input-container">
+                    <label for="usernameInput">Username</label>
+                    <input type="text"
+                           name="username"
+                           id="usernameInput"
+                           placeholder="Enter a username"
+                           required />
+                </div>
+                <div class="input-container">
+                    <label for="passwordInput">Password</label>
+                    <input type="password"
+                           name="password"
+                           id="passwordInput"
+                           placeholder="Enter password"
+                           required />
+                </div>
+                <div class="input-container">
+                    <label for="passwordInputRepeated">Confirm
+                        password</label>
+                    <input type="password"
+                           name="passwordRepeated"
+                           id="passwordInputRepeated"
+                           placeholder="Confirm password"
+                           required />
+                </div>
+            </fieldset>
+            <div>
+                <button>Submit</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </form>
+
+</body>
+
+</html>
