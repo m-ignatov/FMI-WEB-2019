@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ececec;
+    margin: 3rem;
+}
+
+h1 {
+    color: #2d495e;
+    font-weight: bolder;
+}
+
+.container {
+    display: inline-flex;
+    margin-top: 1rem;
+}
+
+#registerForm {
+    margin: 1rem 2rem 0 0;
+}
+
+#loginForm {
+    background-color: #2d495e;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#inputLabel {
+    font-weight: bold;
+    color: #2d495e;
+}
+
+#loginLabel {
+    font-weight: bold;
+    color: #ececec;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerButton {
+    text-align: right;
+}
+
+.loginRow {
+    display: inline-flex;
+    width: 100%;
+}
+
+.registerButton button {
+    font-weight: bold;
+    border: 2px solid #2d495e;
+    color: #2d495e;
+    padding: 5px;
+}
+
+.registerButton button:hover {
+    background-color: #2d495e;
+    color: #ececec;
+}
+
+.loginRow button {
+    font-weight: bold;
+    border: 2px solid #ececec;
+    color: #ececec;
+    background-color: #2d495e;
+    padding: 5px;
+    width: inherit;
+}
+
+.loginRow button:hover {
+    color: #2d495e;
+    background-color: #ececec;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked)+label, [type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked)+label:before, [type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #ececec;
+    background: #2d495e;
+}
+
+/* checked mark aspect */
+
+[type="checkbox"]:not(:checked)+label:after, [type="checkbox"]:checked+label:after {
+    content: '\2611';
+    position: absolute;
+    top: .17em;
+    left: -0.05em;
+    font-size: 2.1em;
+    line-height: 0.5;
+    color: #ececec;
+    font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+
+[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#rememberCheckbox {
+    color: #ececec;
+    font-size: 12px;
+    margin-right: 1rem;
+    display: inline-flex;
+}
+
+.form-container * {
+    margin-top: .5rem;
+}
+
+.form-container>input {
+    height: 1.5rem;
+    width: 12rem;
+}
+
+#passwordResetLink {
+    text-align: right;
+    font-size: 10px;
+    color: #ececec;
+}

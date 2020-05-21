@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Домашно 2
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="style.css">
+</head>
+
+<body>
+    <h1>Потребителски панел</h1>
+    <p>За да се запишете за курс, създайте нов акаунт или влезте в съществуващ
+        такъв.</p>
+    <div class="container">
+        <form id="registerForm">
+            <label id="inputLabel">РЕГИСТРАЦИЯ</label>
+            <div class="form-container">
+                <input type="text"
+                       placeholder="Потребителско име"
+                       required />
+                <input type="email"
+                       placeholder="E-mail"
+                       required />
+                <input type="password"
+                       placeholder="Парола"
+                       required />
+                <input type="password"
+                       placeholder="Потвърди паролата"
+                       required />
+                <div class="registerButton">
+                    <button>Регистрирай се</button>
+                </div>
+            </div>
+        </form>
+        <form id="loginForm">
+            <label id="loginLabel">ВХОД</label>
+            <div class="form-container">
+                <input type="text"
+                       placeholder="Потребителско име"
+                       required />
+                <input type="password"
+                       placeholder="Парола"
+                       required />
+                <div class="loginRow">
+                    <div id="rememberCheckbox">
+                        <input type="checkbox"
+                               id="checkBox" />
+                        <label for="checkBox">Запомняне?</label>
+                    </div>
+                    <button>Влез</button>
+                </div>
+                <a id="passwordResetLink"
+                   href="#">
+                    Забравена парола
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
