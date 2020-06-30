@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <title>
+              Домашно 3
+       </title>
+       <link rel="stylesheet"
+             type="text/css"
+             href="style.css">
+       <script src="utility.js"></script>
+</head>
+
+<body>
+       <form name="userInput"
+             id="userInputForm"
+             onsubmit="validate()">
+              <label id="inputLabel">РЕГИСТРАЦИЯ</label>
+              <div class="form-container">
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="usernameInput"
+                                   placeholder="Потребителско име" />
+                            <div class="error"
+                                 id="usernameInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="namesInput"
+                                   placeholder="Име и Фамилия" />
+                            <div class="error"
+                                 id="namesInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="emailInput"
+                                   placeholder="E-mail" />
+                            <div class="error"
+                                 id="emailInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="password"
+                                   id="passwordInput"
+                                   placeholder="Парола" />
+                            <div class="error"
+                                 id="passwordInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="streetInput"
+                                   placeholder="Улица" />
+                            <div class="error"
+                                 id="streetInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="cityInput"
+                                   placeholder="Град" />
+                            <div class="error"
+                                 id="cityInputError"></div>
+                     </div>
+                     <div class="placeholder">
+                            <input type="text"
+                                   id="postcodeInput"
+                                   placeholder="Пощенски код" />
+                            <div class="error"
+                                 id="postcodeInputError"></div>
+                     </div>
+                     <div class="registerButton">
+                            <button>Регистрирай се</button>
+                     </div>
+                     <div id="result">
+                     </div>
+              </div>
+       </form>
+</body>
+
+</html>
